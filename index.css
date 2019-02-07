@@ -1,0 +1,255 @@
+/* STYLE SHEET FOR INDEX.HTML */
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Idk, my bff Jane? */
+html, body {
+	min-height: 100vh;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* TOP BANNER */
+header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 10px;
+	/* padding-top: .2em; */
+	/* padding-bottom: .2em; */
+	/* color: inherit; */
+	/* background-color: #eee; */
+	background-color: #8b0000;
+	color: #ffffff;
+	font-size: .5em;
+}
+
+header h2 {
+	font-size: 20px;
+}
+
+p.banner {
+	font-size: 1em;
+	font-style: italic;
+}
+
+/*
+h1.top-banner  {
+	font-size: 2em;
+}
+*/
+
+/*
+.banner {
+	color: #eeeeee !important;
+}
+*/
+
+
+/* NAVBAR */
+.containerNavMain {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	/* border-style: groove; */
+}
+
+nav {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	width: 20%;
+	/* background-color: #8b0000; */
+	background-color: #333;
+	/* color: #ffffff; */
+	font-family: Times;
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+	font-size: 60%;
+}
+
+nav p {
+	color: #f2f2f2;
+	margin-bottom: 15px;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav a {
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+nav li.active {
+	background-color: black;
+}
+
+nav a.active {
+	color: white;
+}
+	
+nav img {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+
+/* MAIN BODY */
+main {
+	width: 80%;
+	padding: 15px;
+	color: #333;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+h2.projects {
+	/* text-decoration: underline; */
+	font-weight: bold;
+	color: #8B0000;
+}
+	
+mark.ex {
+	color:#8b0000;
+	background: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.exDesc, .projects {
+	font-size: 14px;
+}
+
+main ul {
+	font-size: 12px;
+	display: list-item;
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+	
+mark.prof {
+	color:#ff0000;
+	background: none;
+}
+
+.gallHead {
+	font-size: 14px;
+}
+	
+ul.gallery, a.gallery {
+	font-family: Bookman, Verdana;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 2em;
+}
+	
+a.gallery_ani:hover {
+	text-decoration: none;
+}
+
+ul.breadcrumb {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	list-style-type: none;
+	padding-inline-start: 0px;
+	font-size: 14px;
+}
+
+ul.breadcrumb li {
+	padding-right: 5px;
+}
+	
+/*
+a.gallery:visited {
+	color: #8b0000;
+}
+*/
+	
+/*
+a.gallery:link {
+	text-decoration: underline;
+}
+*/
+
+/* FOOTER */
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #f2f2f2;
+	/* background-color: #333; */
+	padding: 25px;
+	margin-top: 0%;
+	/* border-style: groove; */
+}
+
+.footSpecial {
+	display: none;
+}
+
+@media screen and (min-width: 728px) {
+	
+	/* styling */
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+	/* TOP BANNER */
+	header {
+		font-size: 1em;
+	}
+	
+	header h2 {
+		font-size: 30px;
+	}
+	
+	
+	/* NAVBAR */
+	nav {
+		font-size: 100%;	
+	}
+	
+	
+	/* MAIN BODY */
+	main {
+		padding: 30px 40px 30px 30px;
+	}
+
+}
