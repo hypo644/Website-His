@@ -26,9 +26,19 @@ time, mark, audio, video {
 
 /* Idk, my bff Jane? */
 html, body {
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+	
+.containerNavMain {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	margin: 0;
+	/* border-style: groove; */
 }
 
 /* TOP BANNER */
@@ -69,13 +79,6 @@ h1.top-banner  {
 
 
 /* NAVBAR */
-.containerNavMain {
-	display: flex;
-	width: 100%;
-	margin: 0;
-	/* border-style: groove; */
-}
-
 nav {
 	display: flex;
 	flex: 1;
@@ -125,6 +128,8 @@ nav img {
 
 /* MAIN BODY */
 main {
+	display: flex;
+	flex-direction: column;
 	width: 80%;
 	padding: 15px;
 	color: #333;
@@ -141,7 +146,11 @@ h2.projects {
 	font-weight: bold;
 	color: #8B0000;
 }
-	
+
+.projects, .exDesc {
+	font-size: 14px;
+}
+
 mark.ex {
 	color:#8b0000;
 	background: none;
@@ -149,8 +158,9 @@ mark.ex {
 	font-size: 16px;
 }
 
-.exDesc, .projects {
-	font-size: 14px;
+mark.prof {
+	color:#ff0000;
+	background: none;
 }
 
 main ul {
@@ -164,27 +174,8 @@ main ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-	
-mark.prof {
-	color:#ff0000;
-	background: none;
-}
 
-.gallHead {
-	font-size: 14px;
-}
-	
-ul.gallery, a.gallery {
-	font-family: Bookman, Verdana;
-	font-size: 16px;
-	text-decoration: none;
-	line-height: 2em;
-}
-	
-a.gallery_ani:hover {
-	text-decoration: none;
-}
-
+/* GALLERY */
 ul.breadcrumb {
 	display: flex;
 	flex-direction: row;
@@ -196,6 +187,35 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
 	padding-right: 5px;
+}
+
+.galHead {
+	font-size: 14px;
+}
+
+.galPar {
+	text-align: justify;
+}
+	
+.galUL, .galList, .galLink, .galNonLink {
+	font-family: Bookman, Verdana;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 2em;
+}
+
+.galContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.galImgDiv {
+	margin: 10px;
+	width: 100%;
+}
+
+.galImg {
+	width: 100%;
 }
 	
 /*
@@ -219,6 +239,7 @@ footer {
 	padding: 25px;
 	margin-top: 0%;
 	/* border-style: groove; */
+	font-size: 14px;
 }
 
 .footSpecial {
