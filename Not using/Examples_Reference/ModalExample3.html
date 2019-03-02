@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pop-UP Image on modal</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>GALLERY</h2>
+			<div class="row">      
+                <div class="col-sm-4">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="Media/Unspecified/28e6.jpg">
+					</a>
+                </div>
+                <div class="col-sm-4">
+					<a class="thumbnail" href="#">
+						<img class="img-responsive" src="img2.jpg">
+					</a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="img3.jpg">
+                    </a>
+                </div>
+			</div>
+		</div>
+		<div class="modal fade" role="dialog" id="imgmodal">
+			<div class="modal-dialog">
+				<div class="modal-content"></div>          
+                    <img class="img-responsive" src="" id="show-img">         
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$("img").click(function(){
+					var img=$(this).attr('src');
+					$("#show-img").attr('src',img);
+					$("#imgmodal").modal('show');
+				});
+			});
+		</script>
+	</body>
+</html>
