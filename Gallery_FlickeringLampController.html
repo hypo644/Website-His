@@ -11,7 +11,7 @@
 	
 	<body>
 	
-		<header>
+		<header class="bannerDiv">
 			<h2>Christopher C. Stuart</h2>
 			<h3>Electronics Engineer / Software Developer / Show Programmer</h3>
 			<p class="banner">Embedded systems, animatronics, show control, ride systems, special FX</p>
@@ -21,50 +21,51 @@
 		
 			<nav role="navigation">
 			
-				<p>Christopher C. Stuart</p>
-				
 				<ul>
 					<li><a href="index.html">Home</a></li><br>
-					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Proficiencies.html">Proficiencies</a></li><br>
+					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Projects.html">Projects</a></li><br>
 					<li class="active"><a href="Gallery.html" class="active">Gallery</a></li><br>
-					<li><a href="Contact.html">Contact</a></li><br>
 				</ul>
 				
-				<img src="Media/Unspecified/28e6.jpg" alt="Christopher C. Stuart">
+				<img src="Media/Unspecified/heroPic.JPG" alt="Christopher C. Stuart">
 				
 			</nav>
 			
-			<main role="main">
-			
-				<h2>
-					<ul class="breadcrumb">
-						<li><a href="Gallery.html">Gallery</a></li>
-						<li>></li>
-						<li class="active">Flickering Lamp Controller</li>
-					</ul>
-				</h2>    
+			<main class="jsMain">
 				
 				<h1>Flickering Lamp Controller</h1><br>
+				
+				<!-- Modal -->
+				<div class="modal jsModal jsGalModal">
+
+					<!-- Modal content -->
+					<div class="modalContent modalContentGal">
+						<span class="close jsClose">&times;</span>
+						<p class="modalDiv">
+						</p>
+					</div>
+
+				</div>
 				
 				<p class="galPar">Main blurb</p><br>
 				
 				<div class="galContainer">
 				
-					<div class="galImgDiv">
+					<div id="jsHardware_PA05" class="jsBtn galImgDiv">
 						<img src="Media/FlickeringLampController/Hardware_PA110005.JPG" class="galImg" alt="Hardware_PA05">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv"> 
+					<div id="jsHardware_PA06" class="jsBtn galImgDiv"> 
 						<img src="Media/FlickeringLampController/Hardware_PA110006.JPG" class="galImg" alt="Hardware_PA06">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv"> 
+					<div id="jsQuadDrive" class="jsBtn galImgDiv"> 
 						<img src="Media/FlickeringLampController/QuadDrive.JPG" class="galImg" alt="Quad Drive">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsFlickerBugSoft1" class="jsBtn galImgDiv">
 						<img src="Media/FlickeringLampController/Software_FlickerBugSoft1.jpg" class="galImg" alt="Flicker Bug Soft1">
 						<p>Blurb</p>
 					</div>
@@ -109,28 +110,17 @@
 			
 		</div>
 		
-		<!--
-		<div class="modal fade" role="dialog" id="imgmodal">
-			<div class="modal-dialog">
-				<div class="modal-content"></div>          
-					<img class="img-responsive" src="" id="show-img">         
-				</div>
-			</div>
-		</div>
-		<script>
-			$(document).ready(function(){
-				$("img").click(function(){
-					var img=$(this).attr('src');
-					$("#show-img").attr('src',img);
-					$("#imgmodal").modal('show');
-				});
-			});
-		</script>
-		-->
-		
 		<footer>
-			<p>Website design courtesy of LZ Ziegler</p>
+			<p>
+				Website design by LZ Ziegler &copy;
+				<script type="text/javascript">document.write(new Date().getFullYear());</script>
+			</p>
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 		
 	</body>
 	

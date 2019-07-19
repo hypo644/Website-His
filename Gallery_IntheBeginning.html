@@ -11,7 +11,7 @@
 	
 	<body>
 	
-		<header>
+		<header class="bannerDiv">
 			<h2>Christopher C. Stuart</h2>
 			<h3>Electronics Engineer / Software Developer / Show Programmer</h3>
 			<p class="banner">Embedded systems, animatronics, show control, ride systems, special FX</p>
@@ -21,82 +21,83 @@
 		
 			<nav role="navigation">
 			
-				<p>Christopher C. Stuart</p>
-				
 				<ul>
 					<li><a href="index.html">Home</a></li><br>
-					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Proficiencies.html">Proficiencies</a></li><br>
+					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Projects.html">Projects</a></li><br>
 					<li class="active"><a href="Gallery.html" class="active">Gallery</a></li><br>
-					<li><a href="Contact.html">Contact</a></li><br>
 				</ul>
 				
-				<img src="Media/Unspecified/28e6.jpg" alt="Christopher C. Stuart">
+				<img src="Media/Unspecified/heroPic.JPG" alt="Christopher C. Stuart">
 				
 			</nav>
 			
-			<main role="main">
-			
-				<h2>
-					<ul class="breadcrumb">
-						<li><a href="Gallery.html">Gallery</a></li>
-						<li>></li>
-						<li class="active">In the Beginning</li>
-					</ul>
-				</h2>    
+			<main class="jsMain">
 				
 				<h1>In the Beginning</h1><br>
+				
+				<!-- Modal -->
+				<div class="modal jsModal jsGalModal">
+
+					<!-- Modal content -->
+					<div class="modalContent modalContentGal">
+						<span class="close jsClose">&times;</span>
+						<p class="modalDiv">
+						</p>
+					</div>
+
+				</div>
 				
 				<p class="galPar">These are a few of the animatronic animals constructed for new show that just opened in March 2007. Some of the larger animals, including Giraffes and Elephants, are hydraulic.</p><br>
 				
 				<div class="galContainer">
 				
-					<div class="galImgDiv">
+					<div id="jsGalAnimationPanel1" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/AnimationPanel1.JPG" class="galImg" alt="Animation Panel 1">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv"> 
+					<div id="jsGalDinos1" class="jsBtn galImgDiv"> 
 						<img src="Media/AnimatronicsApp/IntheBeginning/Dinos1.JPG" class="galImg" alt="Dinos 1">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv"> 
+					<div id="jsGalG1Large" class="jsBtn galImgDiv"> 
 						<img src="Media/AnimatronicsApp/IntheBeginning/G1Large.JPG" class="galImg" alt="G1 Large">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalGir4" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/Gir4.JPG" class="galImg" alt="Gir 4">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalGir7" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/Gir7.JPG" class="galImg" alt="Gir 7">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalGir8" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/Gir8.JPG" class="galImg" alt="Gir 8">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalGirPanel" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/GirPanel.JPG" class="galImg" alt="Gir Panel">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalITBSetup10" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/ITBSetup10.JPG" class="galImg" alt="ITB Setup 10">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalITBSetup12" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/ITBSetup12.JPG" class="galImg" alt="ITB Setup 12">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalPB1Large" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/PB1Large.JPG" class="galImg" alt="PB1 Large">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalPicture009" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/Picture009.jpg" class="galImg" alt="Picture 009">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsGalPicture010" class="jsBtn galImgDiv">
 						<img src="Media/AnimatronicsApp/IntheBeginning/Picture010.jpg" class="galImg" alt="Picture 010">
 						<p>Blurb</p>
 					</div>
@@ -117,28 +118,17 @@
 			
 		</div>
 		
-		<!--
-		<div class="modal fade" role="dialog" id="imgmodal">
-			<div class="modal-dialog">
-				<div class="modal-content"></div>          
-					<img class="img-responsive" src="" id="show-img">         
-				</div>
-			</div>
-		</div>
-		<script>
-			$(document).ready(function(){
-				$("img").click(function(){
-					var img=$(this).attr('src');
-					$("#show-img").attr('src',img);
-					$("#imgmodal").modal('show');
-				});
-			});
-		</script>
-		-->
-		
 		<footer>
-			<p>Website design courtesy of LZ Ziegler</p>
+			<p>
+				Website design by LZ Ziegler &copy;
+				<script type="text/javascript">document.write(new Date().getFullYear());</script>
+			</p>
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 		
 	</body>
 	

@@ -11,7 +11,7 @@
 	
 	<body>
 	
-		<header>
+		<header class="bannerDiv">
 			<h2>Christopher C. Stuart</h2>
 			<h3>Electronics Engineer / Software Developer / Show Programmer</h3>
 			<p class="banner">Embedded systems, animatronics, show control, ride systems, special FX</p>
@@ -21,58 +21,59 @@
 		
 			<nav role="navigation">
 			
-				<p>Christopher C. Stuart</p>
-				
 				<ul>
 					<li><a href="index.html">Home</a></li><br>
-					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Proficiencies.html">Proficiencies</a></li><br>
+					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Projects.html">Projects</a></li><br>
 					<li class="active"><a href="Gallery.html" class="active">Gallery</a></li><br>
-					<li><a href="Contact.html">Contact</a></li><br>
 				</ul>
 				
-				<img src="Media/Unspecified/28e6.jpg" alt="Christopher C. Stuart">
+				<img src="Media/Unspecified/heroPic.JPG" alt="Christopher C. Stuart">
 				
 			</nav>
 			
-			<main role="main">
-			
-				<h2>
-					<ul class="breadcrumb">
-						<li><a href="Gallery.html">Gallery</a></li>
-						<li>></li>
-						<li class="active">Simba Two</li>
-					</ul>
-				</h2>    
+			<main class="jsMain">
 				
 				<h1>Simba Two</h1><br>
+				
+				<!-- Modal -->
+				<div class="modal jsModal jsGalModal">
+
+					<!-- Modal content -->
+					<div class="modalContent modalContentGal">
+						<span class="close jsClose">&times;</span>
+						<p class="modalDiv">
+						</p>
+					</div>
+
+				</div>
 				
 				<p class="galPar">These are a few of the animatronic animals constructed for new show that just opened in March 2007. Some of the larger animals, including Giraffes and Elephants, are hydraulic.</p><br>
 				
 				<div class="galContainer">
 				
-					<div class="galImgDiv">
+					<div id="jsSimbaTwoBV1" class="jsBtn galImgDiv">
 						<img src="Media/SimbaTwoBoard/SimbaTwoBV1.JPG" class="galImg" alt="Simba Two BV1">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv"> 
+					<div id="jsSimbaTwoBV2" class="jsBtn galImgDiv"> 
 						<img src="Media/SimbaTwoBoard/SimbaTwoBV2.JPG" class="galImg" alt="Simba Two BV2">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv"> 
+					<div id="jsSimbaTwoLayoutBV" class="jsBtn galImgDiv"> 
 						<img src="Media/SimbaTwoBoard/SimbaTwoLayoutBV.JPG" class="galImg" alt="Simba Two Layout BV">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsSimbaTwoTV1" class="jsBtn galImgDiv">
 						<img src="Media/SimbaTwoBoard/SimbaTwoTV1.JPG" class="galImg" alt="Simba Two TV1">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsSimbaTwoTV2" class="jsBtn galImgDiv">
 						<img src="Media/SimbaTwoBoard/SimbaTwoTV2.JPG" class="galImg" alt="Simba Two TV2">
 						<p>Blurb</p>
 					</div>
-					<div class="galImgDiv">
+					<div id="jsSimbaTwoTV3" class="jsBtn galImgDiv">
 						<img src="Media/SimbaTwoBoard/SimbaTwoTV3.JPG" class="galImg" alt="Simba Two TV 3">
 						<p>Blurb</p>
 					</div>
@@ -93,28 +94,17 @@
 			
 		</div>
 		
-		<!--
-		<div class="modal fade" role="dialog" id="imgmodal">
-			<div class="modal-dialog">
-				<div class="modal-content"></div>          
-					<img class="img-responsive" src="" id="show-img">         
-				</div>
-			</div>
-		</div>
-		<script>
-			$(document).ready(function(){
-				$("img").click(function(){
-					var img=$(this).attr('src');
-					$("#show-img").attr('src',img);
-					$("#imgmodal").modal('show');
-				});
-			});
-		</script>
-		-->
-		
 		<footer>
-			<p>Website design courtesy of LZ Ziegler</p>
+			<p>
+				Website design by LZ Ziegler &copy;
+				<script type="text/javascript">document.write(new Date().getFullYear());</script>
+			</p>
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 		
 	</body>
 	

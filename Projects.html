@@ -11,7 +11,7 @@
 	
 	<body>
 	
-		<header>
+		<header class="bannerDiv">
 			<h2>Christopher C. Stuart</h2>
 			<h3>Electronics Engineer / Software Developer / Show Programmer</h3>
 			<p class="banner">Embedded systems, animatronics, show control, ride systems, special FX</p>
@@ -21,141 +21,112 @@
 		
 			<nav role="navigation">
 			
-				<p>Christopher C. Stuart</p>
-				
 				<ul>
 					<li><a href="index.html">Home</a></li><br>
-					<li><a href="Experience.html">Experience</a></li><br>
 					<li><a href="Proficiencies.html">Proficiencies</a></li><br>
+					<li><a href="Experience.html">Experience</a></li><br>
 					<li class="active"><a href="Projects.html" class="active">Projects</a></li><br>
 					<li><a href="Gallery.html">Gallery</a></li><br>
-					<li><a href="Contact.html">Contact</a></li><br>
 				</ul>
 				
-				<img src="Media/Unspecified/28e6.jpg" alt="Christopher C. Stuart">
+				<img src="Media/Unspecified/heroPic.JPG" alt="Christopher C. Stuart">
 				
 			</nav>
 			
-			<main role="main"> 
+			<main class="jsMain"> 
+			
 				<h1>Projects</h1><br>
-				<div class="projects">
-					<h2 class="projects">Custom interactive show controller</h2>
-		
-					<p>Hardware, software and productization of systems for cutting edge attractions featuring new levels of guest interaction. Projects involved the development of custom embedded hardware and software including show control engines, motion control, audio, wireless communications, USB, Ethernet and more. Designing requires working with remote teams and creative directors to ensure the desired results.</p><br>	
-
-					<h2 class="projects">HMI design for night time show</h2>
 				
-					<p>HMI design, development and installation for a large theme park. Design used Iconics Graphwoxs software as well as Scriptworx, AlarmWorx and DataWorx. Software interfaces to other standard and proprietary systems to control park wide lighting, audio, fireworks systems, flame systems and other special effects.</p><br> 	
+				<!-- Modal -->
+				<div class="modal jsModal jsPrModal">
 
-					<h2 class="projects">Custom motion control hardware design</h2>
-				
-					<p>Hardware design for a custom live animation motion control system. Design of printed circuit boards as part of a wireless mobile system for battery operated motor driven animation.</p><br>	
+					<!-- Modal content -->
+					<div class="modalContent">
+						<span class="close jsClose">&times;</span>
+						<p class="modalDiv">
+						</p>
+					</div>
 
-					<h2 class="projects">Ride equipment installation / testing, Singapore</h2>
-		
-					<p>Commissioned show action equipment and control system in an attraction for a major theme park in Singapore. Installed and tested PLC software, worked and coordinated with other vendors to integrate with multiple systems. Conducted FAT and SAT testing as well as operations training.</p><br>	
-
-					<h2 class="projects">Custom Stage automation software design</h2>
-		
-					<p>Created custom Windows-based software for a large theatre in NYC. This program interfaces in real time with a PLC system that controls large moving stages and turntables. The software allows the operator to create cues in a scripting format. The program parses, interptrets and executes the cues in the desired sequences while simultaneously coordinating cues with live conditions on stage.</p><br>	
-
-					<h2 class="projects">Dark ride control system</h2>
-		
-					<p>Electrical / Control system design team member for a large multilevel 3D moving motion base ride. Project involved working with the client and other teams to meet (And exceed where possible)  technical and creative requirements.</p><br>	
-
-					<h2 class="projects">Ride vehicle control design / testing</h2>
-		
-					<p>Design and FAT / performance testing of hardware and software for custom ride vehicles. This included PLC software design, hardware design, creating test plans and performing field installation and testing.</p><br>	
-
-					<h2 class="projects">Custom DMX lighting controller / sequencer</h2>
-		
-					<p>This project involved designing custom hardware and software for recording DMX data and streaming it back syncronized to SMPTE for control of costume lighing effects.</p><br>	
-
-					<h2 class="projects">Design specification for animated characters</h2>
-		
-					<p>Design specifications for the control system and electrical hardware in animated character costumes in attractions at a major theme park.</p><br>	
-
-					<h2 class="projects">Motion profile software design</h2>
-		
-					<p>Developed a Windows based application that can graphically edit data streams on a timeline. For use in motion applications such as animatronics, motion bases, etc. Data can be manipulated in standard ways a well as splines and ramps with the ability to save to custom file formats, PLCs, etc.</p><br>	
-
-					<h2 class="projects">Broadway costume lighting controller</h2>
-		
-					<p>This is the design and implementation of a custom microprocessor based LED controller for electric eel characters in a new Broadway show. The small black box is worn on the actor's waist and is wired via connectors to several LED lighting harnesses in the costume. A custom graphical PC interface allows a designer to plug into the box and change and save the look of the effects, which are triggered by buttons embedded in the costume.</p><br>	
-
-					<h2 class="projects">The "Stormy Boat" motion base</h2>
-		
-					<p>This project involved the design and build of the control systems for a large pneumatically driven motion base boat. The boat is a set piece in a large thratrical show and carries 12 actors. I utilized my "Simba Two" motion control hardware along with safety systems to operate the motion base. Custom software and algorithms were prototyped and employed to achive the desired function and artisitc look. I also programmed the motion profile for the show.</p><br> 	
-
-					<h2 class="projects">Animatronics programming</h2>
-		
-					<p>This scope was part of an overall animatronics design project and involved the programming and show integration of large animatronics figures.</p><br>	
-
-					<h2 class="projects">Animatronic figure design</h2>
-		
-					<p>Design and integration of motion systems in animatronic figures. This involved working with mechanical engineers, fabricators, finish artists and producers.</p><br>	
-
-					<h2 class="projects">Simba-Two Animatronics Interface System</h2>
-		
-					<p>This is version two of the custom "animatronics" interface system designed for Sight & Sound. This new version of the board keeps the same base functionality of the "Simba-One" board but I added the following features:
-						<ul>
-							<li>Six bipolar analog inputs for sensors such as load cells to incorporate compliance motion technology</li>
-							<li>The original 8 analog outputs now have a bipolar range</li>
-							<li>An integrated Ethernet communications port</li>
-							<li>Additional RAM and Flash for added functionality including channel descriptions and motion profiles.</li>
-							<li>PC104 interface for industry standard add-on cards</li>
-							<li>Two quadrature encoder input channels</li>
-							<li>New connector scheme for easier installation and panel layout</li>
-						</ul>
-					The Simba-Two board was designed to meet the needs of projects for Sight & Sound's new show "In The Beginning" which opened in 2007.</p><br>	
-
-					<h2 class="projects">Flickering lamp controller</h2>
-		
-					<p>Design and build of a small microcontroller-based lamp controller primarily used for a "flame" effect inside of lanterns, etc.</p> 
-					<p>The "Flicker Bug" board can be configured to control either DC or AC lamp loads. This controller is a very flexible device with a wide variety of applications based on the firmware.</p><br>
-					<p>At its most basic level, it can opperate as a simple DMX lamp dimmer, but it is primarily designed to be a high-end "flicker" controller. There are algorithms in the firmware that generate flame characteristics,  and over 20 programmable parameters that control these algorithms. On top of that, the system is sequencer-based. All of the parameters are programmed as a single frame, and hundreds of frames or "looks" can be sequenced together and executed over time from the 128K on-board EEPROM, giving a truly unique look to each controller without any repetition.</p><br>
-					<p>Analog inputs on the controller allow accelerometers, switches, etc. to effect the algorithms, or cue the sequencer. External events can cause the sequencer to jump to a specific frame or group of frames, creating a completely unique look based on an event. This feature is used in one appication where a lantern gets dropped and has to flare up and then fade out upon being dropped.</p><br>
-					<p>The on-board RS485 port allows DMX512 control and PC programming.</p><br>	
-
-					<h2 class="projects">Animatronics programming</h2>	
-		
-					<p>This scope was part of an overall animatronics design project and involved the programming and show integration of hundreds of animatronics figures.</p><br>	
-
-					<h2 class="projects">Animatronic figure design</h2>	
-		
-					<p>Design and integration of motion systems in animatronic figures. This involved working with mechanical engineers, fabricators, finish artists and producers.</p><br>	
-				
-					<h2 class="projects">Simba-One Animatronics Interface System</h2>	
-		
-					<p>This project was the complete concept, design, prototype, and production of both hardware and firmware/software for a custom interface system for the animatronics at Sight & Sound. The center of this system is a DSP-based board that implements the DSP56F805 (a 16 bit 80Mips Motorola Flash processor).</p><br>
-					<p>The board receives DMX from the control software (Sight & Sound uses Gilderfluke's PC-MACS animation software), and will close up to 8 servo loops, 8 analog outputs, 8 Pulse Code Modulation (PCM) outputs, 16 digital (SSR) outputs and 8 digital programmable inputs. All of these functions have dedicated hardware on the board and are all run simultaniously by the DSP. The purpose of this board is to provide complete control of the mutiple mechanisms and mechanism types required by an animatronic figure, all on one board and under the control of one processor.</p><br>
-					<p>There are no trim pots or any other mechanical adjustments on the board. There is a dedicated half duplex (2 wire) bi-directional RS485 port that communicates to a host computer. One set of dip switches sets the board's comm. address on the system network and all adjustments and monitoring can be done in real-time through the Windows software. The board is not dependent on a host computer to function, the host simply provides an easy, comprehensive and graphical way to set parameters (which are then stored in on-board EEPROM) and monitor functions in real-time if desired.</p><br>
-					<p>Each channel of each function can be individually assigned to any DMX channel and at 8 or 12 bit resolution.Through the Windows software, the user can set and adjust any parameter needed on the board, in real-time. Some of these parameters include 100% scaleable travel limits, default positions, DMX addresses, gains, PID variables, overrides, brakes, error checking, motion smoothing, filters, etc.</p><br>
-					<p>One of the main advantages of this interface is the fact that, with firmware changes, it is very open-ended and versitile. It has not only been used in numerous animatronics applications, but it has also been implemented in some other unique applications such as a 2 ton pneumatically driven motion base in the form of a boat. Although it does not have the redundancy factor of a PLC, this project demonstrates its usability as both a PLC-type device as well as a motion controller. It not only receives DMX to control motion, but it has digital inputs and outputs to provide sensing of air pressure, safety interlocks, etc., and provides an operator interface with buttons and lights for overall front-end stop/load/run control.</p><br>	
-
-					<h2 class="projects">Robo-Babies</h2>	
-		
-					<p>Designed and built a custom microprocessor interface to take DMX512 and interface it to RC servo transmitters to run servomotors in robotic babies for some of the shows at Sight & Sound Theatres. This interfaces has an LCD screen that allowsthe user to adjust parameters which are saved in on-board EEPROM.</p><br>	
-
-					<h2 class="projects">The Weather Adventure</h2>	
-		
-					<p>Designed and built control systems for the "Weather Adventure" at a conservatory in Columbus, OH. Project involved providing turn-key effects and attractions for the client. Some of the effects included an avalanche, a thunder and lightning storm involving audio triggering of large strobes, and a simulated tornado involving motion, lights, fog, audo and video all controlled by custom computer software and hardware.</p><br>	
-
-					<h2 class="projects">The Living Christmas Tree</h2>	
-		
-					<p>Conceptualized, designed and built a microprocessor-based lighting controller for thousands of Christmas lights to create a dazzling light show that runs from custom computer software. All of the frames and sequences are downloaded from the PC over the DMX line and stored in on-board RAM, and the real-time fades and chases are generated by the microprocessor.</p><br>	
-
-					<h2 class="projects">DMX dimmers</h2>	
-		
-					<p>Designed and built custom digital dimmers for specific applications. These microprocessor-based dimmers accept either DMX512 or 0-10 volt control and have an adjustable curve. They also have lamp test buttons on the front pannel and an additional RS485 link for status and configuration.</p>
-					
 				</div>
+				
+				<!-- Open modal -->
+				<button id="jsPrShowController" class="jsBtn"><mark class="pr"><b>Custom interactive show controller</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrHMIDesign" class="jsBtn"><mark class="ex"><b>HMI design for night time show</b></mark></button><br>
+
+				<!-- Open modal -->
+				<button id="jsPrCusMoDes" class="jsBtn"><mark class="ex"><b>Custom motion control hardware design</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrRideEquip" class="jsBtn"><mark class="ex"><b>Ride equipment installation / testing, Singapore</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrCusStageAuto" class="jsBtn"><mark class="ex"><b>Custom Stage automation software design</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrDarkRide" class="jsBtn"><mark class="ex"><b>Dark ride control system</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrRideVehicle" class="jsBtn"><mark class="ex"><b>Ride vehicle control design / testing</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrCusDMX" class="jsBtn"><mark class="ex"><b>Custom DMX lighting controller / sequencer</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrDesignSpecAni" class="jsBtn"><mark class="ex"><b>Design specification for animated characters</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrMotProfSoft" class="jsBtn"><mark class="ex"><b>Motion profile software design</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrBroadwayCos" class="jsBtn"><mark class="ex"><b>Broadway costume lighting controller</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrStormyBoat" class="jsBtn"><mark class="ex"><b>The "Stormy Boat" motion base</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrAniProg" class="jsBtn"><mark class="ex"><b>Animatronics programming</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrAniFigDes" class="jsBtn"><mark class="ex"><b>Animatronic figure design</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrSimbaTwo" class="jsBtn"><mark class="ex"><b>Simba-Two Animatronics Interface System</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrFlickering" class="jsBtn"><mark class="ex"><b>Flickering lamp controller</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrSimbaOne" class="jsBtn"><mark class="ex"><b>Simba-One Animatronics Interface System</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrRoboBabies" class="jsBtn"><mark class="ex"><b>Robo-Babies</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrWeather" class="jsBtn"><mark class="ex"><b>The Weather Adventure</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrChristmasTree" class="jsBtn"><mark class="ex"><b>The Living Christmas Tree</b></mark></button><br>
+				
+				<!-- Open modal -->
+				<button id="jsPrDMXDimmers" class="jsBtn"><mark class="ex"><b>DMX dimmers</b></mark></button><br>
+				
 			</main>
+			
 		</div>
 		
 		<footer>
-			<p>Website design courtesy of LZ Ziegler</p>
+			<p>
+				Website design by LZ Ziegler &copy;
+				<script type="text/javascript">document.write(new Date().getFullYear());</script>
+			</p>
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 		
 	</body>
 	
